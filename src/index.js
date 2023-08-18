@@ -4,11 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import HouseContextProvider from './Components/HouesContext';
+import { BrowserRouter } from 'react-router-dom';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <HouseContextProvider>
     <React.StrictMode>
-      <App />
+      <BrowserRouter basename="/property-site">
+        <App />
+      </BrowserRouter>
     </React.StrictMode>
   </HouseContextProvider>
 );

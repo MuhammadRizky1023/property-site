@@ -8,12 +8,10 @@ import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path='/property/:id' element={<PropertyDetails />} />
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path='/property/:id' element={<PropertyDetails />} />
+    </Routes>
   );
 }
 
